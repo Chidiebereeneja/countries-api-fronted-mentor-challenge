@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import DropDownSearch from '../components/dropDownSearch'
+import DropDownSearch from '../components/DropDownSearch'
 import SearchInupt from '../components/SearchInupt'
 import FilterBar from '../reuseableComponent/FilterBar'
 import Main from '../components/Main'
