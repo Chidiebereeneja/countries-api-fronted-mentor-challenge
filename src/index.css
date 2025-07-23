@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --color-miniDMEl-100:  hsl(209, 23%, 22%);
+  --color-miniDMBg-100:  hsl(207, 26%, 17%);
+  --color-miniLMTxt-100:  hsl(200, 15%, 8%);
+  --color-miniLMInput-100:  hsl(0, 0%, 50%);
+  --color-miniLMBg-100:  hsl(0, 0%, 99%);
+  --color-miniLDMTxtEl-100:  hsl(0, 100%, 100%);
+}
+
+
+
+.cardContainer{
+    height: 300px;
+    padding: 0;
+}
