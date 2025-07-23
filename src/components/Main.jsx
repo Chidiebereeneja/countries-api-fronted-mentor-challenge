@@ -2,7 +2,6 @@ import Card from "../reuseableComponent/Card";
 import { useNavigate } from "react-router-dom";
 import PElement from "./PElement";
 import txtFormatter from "./TxtFormatter";
-import numberFormatter from "./NumberFormatter";
 
 
 function RenderCard({obj, screenMode}) { 
@@ -22,7 +21,7 @@ function RenderCard({obj, screenMode}) {
 
                 <figcaption className="p-3 px-4">
                     <h2 className="font-bold text-[16px] md:text-[19px] mb-1">{txtFormatter(obj?.name)}</h2>
-                    <PElement obj={{name: "Populations: ", value: numberFormatter(obj.population)}}/>
+                    <PElement obj={{name: "Populations: ", value: obj.population}}/>
                     <PElement obj={{name: "Region: ", value: obj.region}}/>
                     <PElement obj={{name: "Capital: ", value: obj.capital}}/>
                 </figcaption>
