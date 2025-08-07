@@ -44,7 +44,11 @@ function App() {
    useEffect(function() {
     async function fetchData() {
       try {
+        // const res = await axios.get("/api/data.json");
+        
         const res = await axios.get("http://localhost:8000/data/");
+        // const resTest = await axios.get("/api/data.json")
+        // console.log(resTest);
         
         dispatch({ type: "data-arrived", payload: res.data });
       } catch (err) {
