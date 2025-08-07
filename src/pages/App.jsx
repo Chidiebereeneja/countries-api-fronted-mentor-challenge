@@ -45,6 +45,9 @@ function App() {
     async function fetchData() {
       try {
         const res = await axios.get("http://localhost:8000/data/");
+        const resTest = await axios.get("/api/data")
+        console.log(resTest.data);
+        
         
         
         dispatch({ type: "data-arrived", payload: res.data });
