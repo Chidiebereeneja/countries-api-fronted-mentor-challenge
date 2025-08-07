@@ -1,14 +1,6 @@
 import BorderCountries from "./BorderCountries"
 import PElement from "./PElement"
 
-// const PElement = function({obj}) {
-//   return (
-//     <p className="text-[14px] md:text-[16px] gap-1">
-//       <strong className="font-medium text-[16px]">{obj.name}</strong>
-//       <span className="text-[16px] font-normal">{obj.value}</span>
-//     </p>
-//   )
-// }
 
 export default function RenderCard({country, borderCountries, screenMode, onBorderCountry}) {
   return (

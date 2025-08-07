@@ -10,7 +10,6 @@ function RenderCard({obj, screenMode}) {
     function displayCountryTask() {
         localStorage.setItem("country?description", obj.id)
         Navigate(`/country?description=${obj.name}%${obj.id}`)
-        console.log(obj);
         
     }
 
